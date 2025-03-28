@@ -1,6 +1,15 @@
 # Claude Hands
 
-[日本語版のREADME](./README.ja.md)
+<p align="center">
+  <img src="assets/logo.png" width="200"/>
+</p>
+
+English | [日本語](README_ja.md)
+
+[![GitHub stars](https://img.shields.io/github/stars/r488it/claude_hands?style=social)](https://github.com/r488it/claude_hands/stargazers)
+&ensp;
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) &ensp;
+
 
 Claude Hands is a project that recreates Manus implementation using Claude Desktop and MCP (Model Control Protocol).
 

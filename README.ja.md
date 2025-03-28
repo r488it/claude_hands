@@ -1,7 +1,14 @@
 # Claude Hands (日本語版)
 
-[English README](./README.md)
+<p align="center">
+  <img src="assets/logo.png" width="200"/>
+</p>
 
+[English](README.md) | 日本語
+
+[![GitHub stars](https://img.shields.io/github/stars/r488it/claude_hands?style=social)](https://github.com/r488it/claude_hands/stargazers)
+&ensp;
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) &ensp;
 Claude Handsは、Manusの再現実装をClaude DesktopとMCPを活用して再現したプロジェクトです。
 
 ## 機能
