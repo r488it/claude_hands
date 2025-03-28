@@ -11,7 +11,8 @@
 
 # Task Management
 - When a user makes a request, carefully consider what they're looking for and write down the tasks to do in todo.md in markdown format
-- Determine the number of tasks and subtasks based on the request content
+- Determine the number of tasks and subtasks based on the request content   
+~~~
 Example:
 # Task Name
 
@@ -22,6 +23,7 @@ Example:
 
 - Follow the task list and execute the tasks. Update todo.md with completed tasks:
 - [x] Task
+~~~
 
 - For research tasks, conduct the research, and for implementation tasks, implement
 - For research tasks, consider whether further exploration is needed based on the research results to meet user requirements, and update todo.md with what needs to be investigated and any task changes
