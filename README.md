@@ -2,19 +2,18 @@
 
 [日本語版のREADME](./README.ja.md)
 
-Claude Hands is a repository that recreates the Manus implementation using Claude Desktop and MCP (Model Control Protocol).
+Claude Hands is a project that recreates Manus implementation using Claude Desktop and MCP (Model Control Protocol).
+
 ## Demo
 
-
 https://github.com/user-attachments/assets/615c8973-c117-4012-9111-e44d594d6869
-
 
 ## Features
 
 - Pre-configured Docker environment for Claude Code development
-- Tavily search integration for enhanced information retrieval
-- Compatible with Claude Desktop through MCP (Model Control Protocol) interfaces
-- Graphic recording-style infographic generation capabilities
+- Enhanced information retrieval with Tavily search integration
+- Seamless compatibility with Claude Desktop through MCP interfaces
+- Powerful graphic recording-style infographic generation capabilities
 
 ## Prerequisites
 
@@ -47,7 +46,7 @@ TAVILY_API_KEY=your_tavily_api_key_here
 
 ### 3. Update Docker Volume Paths
 
-Edit the `docker-compose.yml` file to update the volume paths to match your system:
+Edit the `docker-compose.yml` file to match your system's paths:
 
 ```yaml
 volumes:
@@ -61,21 +60,32 @@ docker-compose up -d
 ```
 
 This command will:
-- Pull the required Docker images if not already available
+- Pull the required Docker images (if not already available)
 - Start the Claude Code and Tavily services
-- Expose the services on the configured ports
+- Make the services available on the configured ports
 
 ## Connecting with Claude Desktop
 
 1. Copy the `claude_desktop_config.json` file to your Claude Desktop configuration directory
 2. Restart Claude Desktop
-3. You should now be able to use the MCP servers through Claude Desktop
+3. You can now use the MCP servers through Claude Desktop
 
 ## Usage
 
-- Use Claude Code for AI development tasks
-- Access the Tavily API for enhanced search capabilities
-- Create graphic recording-style infographics using the knowledge template
+1. Create a new project
+<div align="center" style="display: flex; gap: 20px;">
+    <img src="assets/01_make_project.png" alt="Create project" width="300" />
+</div>
+
+2. Set up your prompt
+<div align="center" style="display: flex; gap: 20px;">
+    <img src="assets/02_set_prompt.png" alt="Set prompt" width="300" />
+</div>
+
+3. Add knowledge template (optional)
+<div align="center" style="display: flex; gap: 20px;">
+    <img src="assets/03_set_knowledge.png" alt="Add knowledge" width="300" />
+</div>
 
 ## License
 

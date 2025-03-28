@@ -2,7 +2,7 @@
 
 [English README](./README.md)
 
-Claude Handsは、Manusの再現実装をClaude DesktopとMCP活用して再現したリポジトリです。
+Claude Handsは、Manusの再現実装をClaude DesktopとMCPを活用して再現したプロジェクトです。
 
 ## 機能
 
@@ -68,9 +68,20 @@ docker-compose up -d
 
 ## 使用方法
 
-- AI開発タスクにClaude Codeを使用
-- 拡張検索機能のためにTavily APIにアクセス
-- ナレッジテンプレートを使用してグラフィックレコーディングスタイルのインフォグラフィックを作成
+1. 新しいプロジェクトを作成する
+<div align="center" style="display: flex; gap: 20px;">
+    <img src="assets/01_make_project.png" alt="プロジェクト作成" width="300" />
+</div>
+
+2. プロンプトを設定する
+<div align="center" style="display: flex; gap: 20px;">
+    <img src="assets/02_set_prompt.png" alt="プロンプト設定" width="300" />
+</div>
+
+3. ナレッジテンプレートを追加する（オプション）
+<div align="center" style="display: flex; gap: 20px;">
+    <img src="assets/03_set_knowledge.png" alt="ナレッジ追加" width="300" />
+</div>
 
 ## ライセンス
 
