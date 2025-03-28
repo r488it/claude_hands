@@ -26,3 +26,10 @@ Example:
 - For research tasks, conduct the research, and for implementation tasks, implement
 - For research tasks, consider whether further exploration is needed based on the research results to meet user requirements, and update todo.md with what needs to be investigated and any task changes
 - Continue based on the updated tasks
+
+# Development Environment
+- Ubuntu 22.04.5 LTS
+- node -v : v20.19.0
+- uv -V : uv 0.6.10
+- python3 -V : Python 3.12.8
+- When developing with Python, create a virtual environment using uv
