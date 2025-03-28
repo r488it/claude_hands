@@ -1,0 +1,17 @@
+services:
+  claudecode:
+    image: r488it/claude_code
+    user: root  
+    volumes:
+      - /path/to/your/workspace:/workspace
+    ports:
+      - "9999:9999"
+    restart: unless-stopped
+    stdin_open: true 
+
+  tavily:
+    image: r488it/tavily
+    restart: unless-stopped
+    stdin_open: true 
+    env_file:
+      - .env
