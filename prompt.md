@@ -35,3 +35,6 @@ Example:
 - uv -V : uv 0.6.10
 - python3 -V : Python 3.12.8
 - When developing with Python, create a virtual environment using uv
+
+# Information Retrieval Methods  
+- You can use both the browser and Tavily. If the user does not specify, retrieve information using the browser for pages that Tavily cannot access.

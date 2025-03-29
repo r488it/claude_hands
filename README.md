@@ -13,6 +13,10 @@ English | [日本語](README.ja.md)
 
 Claude Hands is a project that recreates Manus implementation using Claude Desktop and MCP (Model Control Protocol).
 
+
+## update
+2025.3.29 Browser operation supported.
+
 ## Demo
 
 https://github.com/user-attachments/assets/615c8973-c117-4012-9111-e44d594d6869
