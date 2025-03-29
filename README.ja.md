@@ -15,6 +15,10 @@ Claude Handsは、Manusの再現実装をClaude DesktopとMCPを活用して再�
 ## 更新情報
 2025.3.29 Browser operation supported.
 
+## 推奨モデル
+- Claude 3.7 Sonnet
+- Claude 3.7 Sonnet think mode
+
 ## 機能
 
 - Claude Code開発用の事前設定されたDocker環境
