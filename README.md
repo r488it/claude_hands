@@ -4,7 +4,7 @@
   <img src="assets/logo.png" width="200"/>
 </p>
 
-English | [日本語](README_ja.md)
+English | [日本語](README.ja.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/r488it/claude_hands?style=social)](https://github.com/r488it/claude_hands/stargazers)
 &ensp;
