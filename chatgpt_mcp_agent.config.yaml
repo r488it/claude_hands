@@ -1,0 +1,11 @@
+mcp:
+  servers:
+    claude_code_docker:
+      command: docker
+      args: ["attach", "claude_hands-claudecode-1"]
+    tavily-mcp:
+      command: docker
+      args: ["attach", "claude_hands-claudecode-1"]
+    playwright:
+      command: npx
+      args: ["@playwright/mcp@latest"]

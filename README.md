@@ -16,6 +16,7 @@ Claude Hands is a project that recreates Manus implementation using Claude Deskt
 
 ## update
 2025.3.29 Browser operation supported.
+2025.3.29 ChatGPT Desktop supported. chatgpt_mcp_agent.config.yaml
 
 ## Recommended Model
 - Claude 3.7 Sonnet
