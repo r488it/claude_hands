@@ -1,9 +1,10 @@
 services:
   claudecode:
     image: r488it/claude_code
+    platform: linux/arm64
     user: root  
     volumes:
-      - /path/to/your/workspace:/workspace
+      - ${WORKSPACE_PATH}:/workspace
     ports:
       - "9999:9999"
     restart: unless-stopped
@@ -11,7 +12,8 @@ services:
 
   tavily:
     image: r488it/tavily
+    platform: linux/arm64
     restart: unless-stopped
     stdin_open: true 
-    env_file:
-      - .env
+    environment:
+      - TAVILY_API_KEY=${TAVILY_API_KEY}

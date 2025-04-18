@@ -57,22 +57,14 @@ Create a `.env` file in the root directory:
 touch .env
 ```
 
-Add your Tavily API key to the `.env` file:
+Add your Tavily API key and workspace path to the `.env` file:
 
 ```
 TAVILY_API_KEY=your_tavily_api_key_here
+WORKSPACE_PATH=/path/to/your/workspace
 ```
 
-### 3. Update Docker Volume Paths
-
-Edit the `docker-compose.yml` file to match your system's paths:
-
-```yaml
-volumes:
-  - /path/to/your/workspace:/workspace
-```
-
-### 4. Start the Services
+### 3. Start the Services
 
 ```bash
 docker-compose up -d
