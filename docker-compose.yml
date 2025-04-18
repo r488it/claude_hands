@@ -1,6 +1,7 @@
 services:
   claudecode:
     image: r488it/claude_code
+    platform: linux/amd64
     user: root  
     volumes:
       - ${WORKSPACE_PATH}:/workspace
@@ -11,6 +12,7 @@ services:
 
   tavily:
     image: r488it/tavily
+    platform: linux/amd64
     restart: unless-stopped
     stdin_open: true 
     environment:
