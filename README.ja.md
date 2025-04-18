@@ -51,22 +51,14 @@ cd claude_hands
 touch .env
 ```
 
-`.env`ファイルにTavily APIキーを追加します：
+`.env`ファイルにTavily APIキーとワークスペースパスを追加します：
 
 ```
 TAVILY_API_KEY=your_tavily_api_key_here
+WORKSPACE_PATH=/path/to/your/workspace
 ```
 
-### 3. Dockerボリュームパスの更新
-
-`docker-compose.yml`ファイルを編集して、ボリュームパスをシステムに合わせて更新します：
-
-```yaml
-volumes:
-  - /path/to/your/workspace:/workspace
-```
-
-### 4. サービスの起動
+### 3. サービスの起動
 
 ```bash
 docker-compose up -d
