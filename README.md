@@ -95,10 +95,14 @@ This command will:
     <img src="assets/02_set_prompt.png" alt="Set prompt" width="300" />
 </div>
 
+- [Prompt example](prompts/prompt.ja.md)
+
 3. Add knowledge template (optional)
 <div align="center" style="display: flex; gap: 20px;">
     <img src="assets/03_set_knowledge.png" alt="Add knowledge" width="300" />
 </div>
+
+- [Knowledge template example](prompts/knowledge.md)
 
 ## Star History
 
