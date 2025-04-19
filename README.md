@@ -16,6 +16,7 @@ Claude Hands is a project that recreates Manus implementation using Claude Deskt
 
 
 ## update
+2025.4.19 add auto_approve.js script in scripts   自動承認機能追加（詳細はscriptsフォルダ参照）   
 2025.4.19 reviewing directories   
 2025.4.18 cross-platform support   
 2025.3.29 Browser operation supported.   

@@ -14,6 +14,7 @@
 Claude Handsは、Manusの再現実装をClaude DesktopとMCPを活用して再現したプロジェクトです。
 
 ## 更新情報
+2025.4.19 add auto_approve.js script in scripts   自動承認機能追加（詳細はscriptsフォルダ参照）   
 2025.4.19 reviewing directories   
 2025.4.18 cross-platform support   
 2025.3.29 Browser operation supported.   
