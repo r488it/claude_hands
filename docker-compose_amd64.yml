@@ -1,0 +1,17 @@
+services:
+  claudecode:
+    image: myoshida2/claude_code-amd64
+    user: root  
+    volumes:
+      - ${WORKSPACE_PATH}:/workspace
+    ports:
+      - "9999:9999"
+    restart: unless-stopped
+    stdin_open: true 
+
+  tavily:
+    image: myoshida2/tavily-amd64
+    restart: unless-stopped
+    stdin_open: true 
+    environment:
+      - TAVILY_API_KEY=${TAVILY_API_KEY}

@@ -14,6 +14,7 @@
 Claude Handsは、Manusの再現実装をClaude DesktopとMCPを活用して再現したプロジェクトです。
 
 ## 更新情報
+2025.5.01 Supports not only Docker but also Podman. Supports not only arm64 but also amd64.
 2025.4.19 add auto_approve.js script in scripts   自動承認機能追加（詳細はscriptsフォルダ参照）   
 2025.4.19 reviewing directories   
 2025.4.18 cross-platform support   
@@ -33,7 +34,7 @@ Claude Handsは、Manusの再現実装をClaude DesktopとMCPを活用して再�
 
 ## 前提条件
 
-- DockerとDocker Compose
+- DockerとDocker Compose (Podmanの場合、PodmanとPodman Compose)
 - Claude Desktopアプリケーション
 - Tavily APIキー
 
@@ -64,7 +65,14 @@ WORKSPACE_PATH=/path/to/your/workspace
 ### 3. サービスの起動
 
 ```bash
+# arm64の場合
 docker-compose up -d
+# amd64の場合
+docker-compose --file docker-compose_amd64.yml up -d
+# Podman(arm64)を使用している場合
+podman compose --file docker-compose.yml up -d
+# Podman(amd64)を使用している場合
+podman compose --file docker-compose_amd64.yml up -d
 ```
 
 このコマンドにより：
@@ -75,6 +83,7 @@ docker-compose up -d
 ## Claude Desktopとの接続
 
 1. `claude_desktop_config.json`ファイルをClaude Desktop設定ディレクトリにコピーします
+※Podmanの場合は、`claude_desktop_config_podman.json`ファイルを`claude_desktop_config.json`にリネームしてコピー
 2. Claude Desktopを再起動します
 3. これでMCPサーバーをClaude Desktopで使用できるようになります
 

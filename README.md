@@ -16,6 +16,7 @@ Claude Hands is a project that recreates Manus implementation using Claude Deskt
 
 
 ## update
+2025.5.01 Supports not only Docker but also Podman. Supports not only arm64 but also amd64.
 2025.4.19 add auto_approve.js script in scripts   自動承認機能追加（詳細はscriptsフォルダ参照）   
 2025.4.19 reviewing directories   
 2025.4.18 cross-platform support   
@@ -39,7 +40,7 @@ https://github.com/user-attachments/assets/615c8973-c117-4012-9111-e44d594d6869
 
 ## Prerequisites
 
-- Docker and Docker Compose
+- Docker and Docker Compose (Podmanの場合、PodmanとPodman Compose)
 - Claude Desktop application
 - Tavily API key
 
@@ -70,7 +71,14 @@ WORKSPACE_PATH=/path/to/your/workspace
 ### 3. Start the Services
 
 ```bash
+# arm64
 docker-compose up -d
+# amd64
+docker-compose --file docker-compose_amd64.yml up -d
+# Podman(arm64)
+podman compose --file docker-compose.yml up -d
+# Podman(amd64)
+podman compose --file docker-compose_amd64.yml up -d
 ```
 
 This command will:
@@ -81,6 +89,7 @@ This command will:
 ## Connecting with Claude Desktop
 
 1. Copy the `claude_desktop_config.json` file to your Claude Desktop configuration directory
+*For Podman, rename the `claude_desktop_config_podman.json` file to `claude_desktop_config.json` and copy it.
 2. Restart Claude Desktop
 3. You can now use the MCP servers through Claude Desktop
 
@@ -96,7 +105,7 @@ This command will:
     <img src="assets/02_set_prompt.png" alt="Set prompt" width="300" />
 </div>
 
-- [Prompt example](prompts/prompt.ja.md)
+- [Prompt example](prompts/prompt.md)
 
 3. Add knowledge template (optional)
 <div align="center" style="display: flex; gap: 20px;">
