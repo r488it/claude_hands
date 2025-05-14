@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/r488it-claude-hands-badge.png)](https://mseep.ai/app/r488it-claude-hands)
+
 # Claude Hands
 
 <p align="center">
