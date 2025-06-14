@@ -8,7 +8,8 @@ services:
     ports:
       - "9999:9999"
     restart: unless-stopped
-    stdin_open: true 
+    stdin_open: true
+    container_name: claude_hands-claudecode-1 
 
   tavily:
     image: r488it/tavily
@@ -17,3 +18,4 @@ services:
     stdin_open: true 
     environment:
       - TAVILY_API_KEY=${TAVILY_API_KEY}
+    container_name: claude_hands-tavily-1
