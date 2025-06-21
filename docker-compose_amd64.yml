@@ -8,6 +8,7 @@ services:
       - "9999:9999"
     restart: unless-stopped
     stdin_open: true 
+    container_name: claude_hands-claudecode-1
 
   tavily:
     image: myoshida2/tavily-amd64
@@ -15,3 +16,4 @@ services:
     stdin_open: true 
     environment:
       - TAVILY_API_KEY=${TAVILY_API_KEY}
+    container_name: claude_hands-tavily-1
